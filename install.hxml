@@ -1,3 +1,3 @@
-extraParams.hxml
+ipc.hxml
 --macro Install.run()
 --cmd haxelib install ipc.zip
