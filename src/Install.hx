@@ -6,9 +6,11 @@ import sys.FileSystem;
 
 class Install {
 	static function run() {
-        FileSystem.deleteFile("ipc.zip");
-		final paths = FileSystem.readDirectory(".");
-		final entries = new List<Entry>();
+        final paths = new List<String>();
+        paths.add("src");
+        paths.add("haxelib.json");
+        paths.add("extraParams.hxml");
+        final entries = new List<Entry>();
 		while (paths.length > 0) {
 			final path = paths.pop();
 			if (FileSystem.isDirectory(path)) {
@@ -27,10 +29,10 @@ class Install {
 					compressed: false
 				});
 			}
-        }
-        var out=File.write("ipc.zip");
-        new Writer(out).write(entries);
-        out.flush();
-        out.close();
+		}
+		var out = File.write("ipc.zip");
+		new Writer(out).write(entries);
+		out.flush();
+		out.close();
 	}
 }

@@ -4,6 +4,6 @@
     "license": "LGPL",
     "main": "josephsmendoza.ipc.Test",
     "contributors": ["josephsmendoza"],
-    "version": "1.0.0",
-    "releasenote": "inital release"
+    "version": "1.0.2",
+    "releasenote": "fixed more packaging issues"
 }
