@@ -1,2 +1,2 @@
 --macro exclude("josephsmendoza.ipc.Test")
---macro exclude("Install");
+--macro exclude("Install")
