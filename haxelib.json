@@ -4,6 +4,6 @@
     "license": "LGPL",
     "main": "josephsmendoza.ipc.Test",
     "contributors": ["josephsmendoza"],
-    "version": "1.0.3",
-    "releasenote": "fixed more packaging issues"
+    "version": "1.0.4",
+    "releasenote": "include licence in haxelib"
 }

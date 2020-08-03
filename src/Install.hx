@@ -9,7 +9,8 @@ class Install {
         final paths = new List<String>();
         paths.add("src");
         paths.add("haxelib.json");
-        paths.add("extraParams.hxml");
+		paths.add("extraParams.hxml");
+		paths.add("LICENCE");
         final entries = new List<Entry>();
 		while (paths.length > 0) {
 			final path = paths.pop();
