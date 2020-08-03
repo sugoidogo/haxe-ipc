@@ -1,0 +1,14 @@
+ipc.hxml
+extraParams.hxml
+--times
+--each
+--python bin/ipc.py
+--next
+--jvm bin/ipc.jar
+--next
+--cs bin/cs
+--next
+-D HXCPP_M64
+-D static_link
+-D dll-export
+--cpp bin/cpp
