@@ -5,5 +5,5 @@
     "main": "josephsmendoza.ipc.Test",
     "contributors": ["josephsmendoza"],
     "version": "1.0.4",
-    "releasenote": "include licence in haxelib"
+    "releasenote": "include license in haxelib"
 }
