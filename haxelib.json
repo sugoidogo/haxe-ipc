@@ -4,6 +4,6 @@
     "license": "LGPL",
     "main": "josephsmendoza.ipc.Test",
     "contributors": ["josephsmendoza"],
-    "version": "1.0.4",
-    "releasenote": "include license in haxelib"
+    "version": "1.0.5",
+    "releasenote": "include readme in haxelib"
 }
