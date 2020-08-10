@@ -1,5 +1,5 @@
 # haxe-ipc
-IPC library written in haxe for all haxe targets.  
+IPC library written in haxe for all [sys targets](https://haxe.org/manual/std-sys.html).  
 Below is an example in haxe.
 ```haxe
 class Server{
