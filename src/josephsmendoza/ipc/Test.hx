@@ -16,24 +16,4 @@ class Test {
 		daemon.close();
 		out.close();
 	}
-
-	static function clean() {
-		if (Sys.systemName() == "Windows") {
-			Sys.command("rmdir bin /s /q");
-		} else {
-			Sys.command("rm -rf bin");
-		}
-	}
-
-    static function await() {
-        while(Sys.command("haxe",["ipc.hxml","--macro","josephsmendoza.ipc.Test.wait()"])!=0){}
-    }
-	static function wait() {
-		while (true) {
-			try {
-                SocketServer.fromURI("tcp://localhost:12345").close();
-                return;
-			} catch (e) {}
-		}
-	}
 }
