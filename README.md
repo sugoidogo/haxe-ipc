@@ -1,7 +1,7 @@
 # haxe-ipc
 IPC library written in haxe for all [sys targets](https://haxe.org/manual/std-sys.html).  
-If you'd like to help get this library working for your non-sys target, please open an issue!
-Below is an example in haxe.
+If you'd like to help get this library working for your non-sys target, please open an issue!  
+Below is an IPC example via tcp, and then via stdio, in haxe.
 ```haxe
 class Server{
     public static main(){
