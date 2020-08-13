@@ -1,5 +1,6 @@
 ipc.hxml
-extraParams.hxml
+--macro Macros.mingw()
+josephsmendoza.IPC
 --times
 --each
 --python bin/ipc.py
@@ -10,5 +11,8 @@ extraParams.hxml
 --next
 -D HXCPP_M64
 -D static_link
+--cpp bin/cpp
+--next
+-D HXCPP_M64
 -D dll-export
 --cpp bin/cpp

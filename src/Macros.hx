@@ -1,5 +1,6 @@
+import sys.net.Socket;
+import sys.net.Host;
 import haxe.macro.Compiler;
-import josephsmendoza.ipc.SocketServer;
 import haxe.zip.Writer;
 import sys.io.File;
 import haxe.io.Path;
@@ -55,7 +56,9 @@ class Macros {
 	static function wait() {
 		while (true) {
 			try {
-                SocketServer.fromURI("tcp://localhost:12345").close();
+				var sock=new Socket();
+				sock.bind(new Host("localhost"),12345);
+				sock.close();
                 return;
 			} catch (e) {}
 		}

@@ -1,10 +1,8 @@
 ipc.hxml
-# this requires hxcpp, hxjava, and hxcs
-# this also requires the jre, python3,
-# mono and g++ on linux, minimingw on windows.
---times
---main josephsmendoza.ipc.Test
+--main Test
 --each
+--macro Macros.clean()
+--next
 --macro Macros.await()
 --python bin/test.py
 --next
@@ -17,11 +15,12 @@ ipc.hxml
 --next
 --macro Macros.await()
 --jvm bin/test.jar
+--next
 --cmd java -jar bin/test.jar
 --next
 --macro Macros.await()
---macro Macros.mingw()
 --cpp bin/cpp
+--next
 --cmd bin/cpp/Test
 --next
 --macro Macros.clean()

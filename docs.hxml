@@ -1,0 +1,7 @@
+ipc.hxml
+--library dox
+-D doc-gen
+--xml bin/types.xml
+josephsmendoza.IPC
+--interp
+--cmd haxelib run dox -i bin -o docs
