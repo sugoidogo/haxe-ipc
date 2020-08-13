@@ -1,21 +1,26 @@
 ipc.hxml
---times
---main josephsmendoza.ipc.Test
+--main Test
 --each
---macro josephsmendoza.ipc.Test.await()
+--macro Macros.clean()
+--next
+--macro Macros.await()
 --python bin/test.py
---cmd python bin/test.py
 --next
---macro josephsmendoza.ipc.Test.await()
+--macro Macros.python("bin/test.py")
+--next
+--macro Macros.await()
 --cs bin/cs
---cmd mono bin/cs/bin/Test.exe
 --next
---macro josephsmendoza.ipc.Test.await()
---cpp bin/cpp
---cmd bin/cpp/Test
+--macro Macros.cs("bin/cs/bin/Test.exe")
 --next
---macro josephsmendoza.ipc.Test.await()
+--macro Macros.await()
 --jvm bin/test.jar
+--next
 --cmd java -jar bin/test.jar
 --next
---macro josephsmendoza.ipc.Test.clean()
+--macro Macros.await()
+--cpp bin/cpp
+--next
+--cmd bin/cpp/Test
+--next
+--macro Macros.clean()
